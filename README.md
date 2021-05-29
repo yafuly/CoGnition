@@ -16,7 +16,7 @@ This work is accepted by main conference of ACL 2021. You may find the paper her
 ## Data
 All splits of CoGnitnion dataset are included in '/data', which contains randomly split training, validation and test sets, along with a CG test set ('data/cg-test') for evaluating compositonal genernalization. 
 Samples from the training, validation and random test sets:
-Src | # Translations
+Src | Ref
 ------------ | -------------
 taylor pulled over and fixed the man 's car in less than an hour . | 泰勒 靠边 停车 ， 不到 一个 小时 就 修好 了 那 人 的 车 。
 she kept asking her husband , but they did n't have enough money . | 她 一直 问 她 丈夫 ， 但 他们 没有 足够 的 钱 。
@@ -27,9 +27,20 @@ taylor had a small house in the country . |  泰勒 在 乡下 有 一所 小 �
 taylor screamed with joy . | 泰勒 高兴 得 尖叫 起来 。
 she could n't wait to use the new words . |  她 迫不及待 地想用 这些 新词 。
 Samples from the **CG test set**:
-Src | # Translations
+Src | Compounds | Ref
 ------------ | -------------
-
+all the sudden the waiter screamed in pain . 
+one day another lazy lawyer snapped and broke every window in the car . 
+each doctor he liked was talking to a friend on the phone . 
+every smart lawyer at the store decided to go back next week . 
+she said she liked the building ! 
+he soon met the special girl named taylor . 
+she took the child he liked out to enjoy the snow . 
+when taylor saw the dirty car he liked , he was amazed . 
+taylor felt really awful about the bee . 
+inside the small apartment were some of my old toys . 
+taylor forgot about the chair on the floor ! 
+he jumped from the bench towards the large airplane on the floor . 
 
 ## Automatic Evaluation
 Besides human evaluation, we provide an automatic evaluation tool as an alternative. To automatically evaluate the ability of compositional generalization for MT models, run 'eval/eval.py' on model results:
