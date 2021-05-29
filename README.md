@@ -46,8 +46,8 @@ when taylor saw the dirty car he liked , he was amazed . | saw the dirty car he 
 taylor felt really awful about the bee . | about the bee | 泰勒对蜜蜂的事感到很难过。
 inside the small apartment were some of my old toys . | inside the small apartment | 小公寓里放着我的一些旧玩具。
 taylor forgot about the chair on the floor ! | about the chair on the floor | 泰勒忘了地板上的椅子！
-
 he jumped from the bench towards the large airplane on the floor . | towards the large airplane on the floor | 他从长凳上跳向地板上的大飞机。
+
 The corresponding compounds are listed in 'data/cg-test/*.compound'.
 
 ## Automatic Evaluation
