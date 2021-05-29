@@ -11,7 +11,7 @@ CG test set | 10,800
 
 To evaluate your model's ability of compositonal generalization, train your model on training and validation sets and evaluate on both the **random test set** and the **CG test set**. Then either human evaluation or the provided automatic evaluation tool can be employed to evalaute the correctness of compound translations.
 
-This work is accepted by main conference of ACL 2021. You may find the paper here: <>.
+This work is accepted to appear at the ACL 2021 main conference. You may find the paper here: <>.
 
 ## Data
 All splits of CoGnitnion dataset are included in '/data', which contains randomly split training, validation and test sets, along with a CG test set ('data/cg-test') for evaluating compositonal genernalization.
@@ -23,8 +23,8 @@ Src | Ref
 taylor pulled over and fixed the man 's car in less than an hour . | 泰勒 靠边 停车 ， 不到 一个 小时 就 修好 了 那 人 的 车 。
 she kept asking her husband , but they did n't have enough money . | 她 一直 问 她 丈夫 ， 但 他们 没有 足够 的 钱 。
 i went to the kitchen to make a sandwich . | 我 去 厨房 做 三明治 。
-but when she looked in the mirror only her face was young .     但 当 她 照镜子 时 ， 只有 她 的 脸 是 年轻 的 。
-she had to go and buy more .    她 不得不 去 买 更 多 的 东西 。
+but when she looked in the mirror only her face was young . | 但 当 她 照镜子 时 ， 只有 她 的 脸 是 年轻 的 。
+she had to go and buy more . | 她 不得不 去 买 更 多 的 东西 。
 taylor had a small house in the country . |  泰勒 在 乡下 有 一所 小 房子 。
 taylor screamed with joy . | 泰勒 高兴 得 尖叫 起来 。
 she could n't wait to use the new words . |  她 迫不及待 地想用 这些 新词 。
