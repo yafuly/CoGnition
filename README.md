@@ -26,6 +26,7 @@ she had to go and buy more .    她 不得不 去 买 更 多 的 东西 。
 taylor had a small house in the country . |  泰勒 在 乡下 有 一所 小 房子 。
 taylor screamed with joy . | 泰勒 高兴 得 尖叫 起来 。
 she could n't wait to use the new words . |  她 迫不及待 地想用 这些 新词 。
+The target side Chinese is segmented using [Jieba segmenter](https://github.com/fxsjy/jieba).
 Samples from the **CG test set**:
 Src | Compounds | Ref
 ------------ | -------------
@@ -41,6 +42,7 @@ taylor felt really awful about the bee . | about the bee | 泰勒对蜜蜂的事
 inside the small apartment were some of my old toys . | inside the small apartment | 小公寓里放着我的一些旧玩具。
 taylor forgot about the chair on the floor ! | about the chair on the floor | 泰勒忘了地板上的椅子！
 he jumped from the bench towards the large airplane on the floor . | towards the large airplane on the floor | 他从长凳上跳向地板上的大飞机。
+The corresponding compounds are listed in 'data/cg-test/*.compound'.
 
 ## Automatic Evaluation
 Besides human evaluation, we provide an automatic evaluation tool as an alternative. To automatically evaluate the ability of compositional generalization for MT models, run 'eval/eval.py' on model results:
