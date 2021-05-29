@@ -34,7 +34,7 @@ The target side Chinese is segmented using [Jieba segmenter](https://github.com/
 Samples from the **CG test set**:
 
 Src | Compounds | Ref
------------- | -------------
+------------ | ------------- | -------------
 all the sudden the waiter screamed in pain . | the waiter | 突然，服务员痛苦地尖叫起来。
 one day another lazy lawyer snapped and broke every window in the car . | another lazy lawyer | 一天，另一个懒惰的律师啪地一声打碎了车里的每一扇窗户。
 each doctor he liked was talking to a friend on the phone . | each doctor he liked | 他喜欢的每一个医生都在和一个朋友通电话。
