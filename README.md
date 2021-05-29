@@ -29,18 +29,18 @@ she could n't wait to use the new words . |  她 迫不及待 地想用 这些 �
 Samples from the **CG test set**:
 Src | Compounds | Ref
 ------------ | -------------
-all the sudden the waiter screamed in pain . 
-one day another lazy lawyer snapped and broke every window in the car . 
-each doctor he liked was talking to a friend on the phone . 
-every smart lawyer at the store decided to go back next week . 
-she said she liked the building ! 
-he soon met the special girl named taylor . 
-she took the child he liked out to enjoy the snow . 
-when taylor saw the dirty car he liked , he was amazed . 
-taylor felt really awful about the bee . 
-inside the small apartment were some of my old toys . 
-taylor forgot about the chair on the floor ! 
-he jumped from the bench towards the large airplane on the floor . 
+all the sudden the waiter screamed in pain . | the waiter | 突然，服务员痛苦地尖叫起来。
+one day another lazy lawyer snapped and broke every window in the car . | another lazy lawyer | 一天，另一个懒惰的律师啪地一声打碎了车里的每一扇窗户。
+each doctor he liked was talking to a friend on the phone . | each doctor he liked | 他喜欢的每一个医生都在和一个朋友通电话。
+every smart lawyer at the store decided to go back next week . | every smart lawyer at the store | 店里每个聪明的律师都决定下周再去。
+she said she liked the building ! | liked the building | 她说她喜欢这栋楼！
+he soon met the special girl named taylor . | met the special girl | 他很快就遇到了那个特别的女孩，名叫泰勒。
+she took the child he liked out to enjoy the snow . | took the child he liked | 她带着他喜欢的孩子出去赏雪。
+when taylor saw the dirty car he liked , he was amazed . | saw the dirty car he liked | 当泰勒看到他喜欢的脏车时，他惊叹不已。
+taylor felt really awful about the bee . | about the bee | 泰勒对蜜蜂的事感到很难过。
+inside the small apartment were some of my old toys . | inside the small apartment | 小公寓里放着我的一些旧玩具。
+taylor forgot about the chair on the floor ! | about the chair on the floor | 泰勒忘了地板上的椅子！
+he jumped from the bench towards the large airplane on the floor . | towards the large airplane on the floor | 他从长凳上跳向地板上的大飞机。
 
 ## Automatic Evaluation
 Besides human evaluation, we provide an automatic evaluation tool as an alternative. To automatically evaluate the ability of compositional generalization for MT models, run 'eval/eval.py' on model results:
