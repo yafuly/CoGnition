@@ -66,6 +66,7 @@ CG-test | 25.09% | 58.15% | 49.30
 CG-test-NP | 19.31% | 49.03% | 51.51
 CG-test-VP | 22.48% | 54.17% | 48.13
 CG-test-PP | 33.56% | 72.25% | 48.26
+
 This can serve as a NMT baseline for CoGnition dataset under automatic evaluation.
 
 ## Acknowledgment
