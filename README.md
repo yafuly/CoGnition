@@ -54,7 +54,7 @@ The corresponding compounds are listed in '/data/cg-test/*.compound'.
 ## Automatic Evaluation
 Besides human evaluation, we provide an automatic evaluation tool as an alternative. With the human annotation as ground truth, our automatic evaluation tool achieves a precision of 94.80% and a recall of 87.05%. To automatically evaluate the ability of compositional generalization for MT models, run '/eval/eval.py' on model results:
 `python eval.py 'path_to_results' 'path-to-lexicon'`
-where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., '/eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t', e.g., "the lawyer ended up winning second place ! \t the lawyer \t 律师 最终 得 了 第二名 ！".
+where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., '/eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t', e.g., "the lawyer ended up winning second place !\tthe lawyer\t律师 最终 得 了 第二名 ！".
 
 ## Baseline
 '/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
