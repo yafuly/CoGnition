@@ -1,7 +1,8 @@
 # CoGnition: a Compositional Generalization Machine Translation Dataset
 
 
-CoGnition is a dataset decicated for evaluating compositional generailziation in machine translation, consisting of altogether 227,046 sentence pairs:
+CoGnition is a dataset decicated for evaluating compositional generailziation in machine translation, containing parallel corpus of 216,246 sentence pairs and a CG test set of 10,800 sentence pairs.
+
 Split | # Samples
 ------------ | -------------
 Training set | 196,246
