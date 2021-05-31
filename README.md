@@ -33,7 +33,7 @@ The target side Chinese is segmented using [Jieba segmenter](https://github.com/
 
 Samples from the **CG test set**:
 
-Src | Compounds | Ref
+Src | Compound | Ref
 ------------ | ------------- | -------------
 all the sudden the waiter screamed in pain . | the waiter | 突然，服务员痛苦地尖叫起来。
 one day another lazy lawyer snapped and broke every window in the car . | another lazy lawyer | 一天，另一个懒惰的律师啪地一声打碎了车里的每一扇窗户。
@@ -51,7 +51,7 @@ he jumped from the bench towards the large airplane on the floor . | towards the
 The corresponding compounds are listed in 'data/cg-test/*.compound'.
 
 ## Automatic Evaluation
-Besides human evaluation, we provide an automatic evaluation tool as an alternative. With the human annotation as ground truth, our automatic evaluation tool achieves a precision of 94.80% and a recall of 87.05%. To automatically evaluate the ability of compositional generalization for MT models, run 'eval/eval.py' on model results:
+Besides human evaluation, we provide an automatic evaluation tool as an alternative. With the human annotation as ground truth, our automatic evaluation tool achieves a precision of 94.80% and a recall of 87.05%. To automatically evaluate the ability of compositional generalization for MT models, run '/eval/eval.py' on model results:
 `python eval.py 'path_to_results' 'path-to-lexicon'`
 where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., 'eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t'.
 
@@ -67,7 +67,7 @@ CG-test-NP | 19.31% | 49.03% | 51.51
 CG-test-VP | 22.48% | 54.17% | 48.13
 CG-test-PP | 33.56% | 72.25% | 48.26
 
-This can serve as a NMT baseline for CoGnition dataset under automatic evaluation.
+This can serve as a NMT baseline for the CoGnition dataset under automatic evaluation.
 
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
