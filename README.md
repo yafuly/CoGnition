@@ -14,7 +14,7 @@ To evaluate your model's ability of compositonal generalization, train your mode
 This work is accepted to appear at the ACL 2021 main conference. You may find the paper here: <>.
 
 ## Data
-All splits of CoGnitnion dataset are included in '/data', which contains randomly split training, validation and test sets, along with a CG test set ('data/cg-test') for evaluating compositonal genernalization.
+All splits of CoGnitnion dataset are included in '/data', which contains the randomly split training, validation and test sets, along with the CG test set ('/data/cg-test') for evaluating compositonal genernalization.
 
 Samples from the training, validation and random test sets:
 
@@ -48,12 +48,12 @@ inside the small apartment were some of my old toys . | inside the small apartme
 taylor forgot about the chair on the floor ! | about the chair on the floor | 泰勒忘了地板上的椅子！
 he jumped from the bench towards the large airplane on the floor . | towards the large airplane on the floor | 他从长凳上跳向地板上的大飞机。
 
-The corresponding compounds are listed in 'data/cg-test/*.compound'.
+The corresponding compounds are listed in '/data/cg-test/*.compound'.
 
 ## Automatic Evaluation
 Besides human evaluation, we provide an automatic evaluation tool as an alternative. With the human annotation as ground truth, our automatic evaluation tool achieves a precision of 94.80% and a recall of 87.05%. To automatically evaluate the ability of compositional generalization for MT models, run '/eval/eval.py' on model results:
 `python eval.py 'path_to_results' 'path-to-lexicon'`
-where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., '/eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t'.
+where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., '/eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t', e.g., "the lawyer ended up winning second place !\tthe lawyer\t律师 最终 得 了 第二名 ！".
 
 ## Baseline
 '/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
@@ -67,7 +67,7 @@ CG-test-NP | 19.31% | 49.03% | 51.51
 CG-test-VP | 22.48% | 54.17% | 48.13
 CG-test-PP | 33.56% | 72.25% | 48.26
 
-This can serve as a NMT baseline for the CoGnition dataset under automatic evaluation.
+This can serve as a NMT **baseline** for the CoGnition dataset **under automatic evaluation**.
 
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
