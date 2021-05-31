@@ -55,6 +55,19 @@ Besides human evaluation, we provide an automatic evaluation tool as an alternat
 `python eval.py 'path_to_results' 'path-to-lexicon'`
 where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., 'eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t'.
 
+## Baseline
+'/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
+
+We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation:
+Test Set | Instance-level Error Rate | Aggregate-level Error Rate | BLEU
+------------ | ------------- | ------------- | ------------- 
+Random-test | - | - | 69.58
+CG-test | 25.09% | 58.15% | 49.30
+CG-test-NP | 19.31% | 49.03% | 51.51
+CG-test-VP | 22.48% | 54.17% | 48.13
+CG-test-PP | 33.56% | 72.25% | 48.26
+This can serve as a NMT baseline for CoGnition dataset under automatic evaluation.
+
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
 Major contributors include Xianchao Zhu, Guohui Chen, Jing Yang, Jing Li, Feng Chen, Jun Deng and Jiaxiang Xiang.
