@@ -17,9 +17,9 @@ for line in lexicon_lines:
 # atom list
 P = ["about", "around", "before", "behind", "except", "for", "from", "inside", "like", "near", "on", "to", "toward", "towards", "under", "with", "without"]
 V = ["asked","visited","heard","lost","hated","stopped","woke","found","watched","took","saw","told","caught","liked","left","gave","invited","met","chose",]
-DET = ["the","every","any","another","each","special","silly",]
-ADJ = ["small","red","dirty","lazy","smart","large",]
-N = ["dog","doctor","sandwich","hat","waiter","lawyer","peanut","farmer","car","girl","boyfriend","child","chair","building","clown","bee",]
+DET = ["the","every","any","another","each"]
+ADJ = ["small","red","dirty","lazy","smart","large","special","silly","quiet","empty","fake"]
+N = ["dog","doctor","sandwich","hat","waiter","lawyer","peanut","farmer","car","girl","boyfriend","child","chair","building","clown","bee","apartment","farm","airplane"]
 MOD = ["mod0","mod1","mod2",]
 ATOM_TYPE2LIST = {"P":P, "V":V, "DET":DET, "ADJ":ADJ, "N":N, "MOD":MOD}
 
