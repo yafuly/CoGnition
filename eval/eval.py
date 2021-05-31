@@ -70,6 +70,7 @@ compound_flag = []
 for line in text_lines:
     line = line.strip()
     src, compound, hyp = line.split("\t")
+    assert compound in src, "Compound can not be found in given sentence."
     compound = _reg_mod(compound)
     hyp = hyp.replace("@@ ","").replace(" ","") # squeeze cn chars
     atom_types = ["P", "V", "DET", "ADJ", "N", "MOD"]
