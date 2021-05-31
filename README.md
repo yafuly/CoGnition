@@ -51,7 +51,7 @@ he jumped from the bench towards the large airplane on the floor . | towards the
 The corresponding compounds are listed in 'data/cg-test/*.compound'.
 
 ## Automatic Evaluation
-Besides human evaluation, we provide an automatic evaluation tool as an alternative. To automatically evaluate the ability of compositional generalization for MT models, run 'eval/eval.py' on model results:
+Besides human evaluation, we provide an automatic evaluation tool as an alternative. With the human annotation as ground truth, our automatic evaluation tool achieves a precision of 94.80% and a recall of 87.05%. To automatically evaluate the ability of compositional generalization for MT models, run 'eval/eval.py' on model results:
 `python eval.py 'path_to_results' 'path-to-lexicon'`
 where 'path_to_results' refers to the path of model results and 'path-to-lexicon' refers to the provided lexicon, i.e., 'eval/lexicon'. Note that the model results should contain test sentences, **corresponding compounds** and model translations, separted by '\t'.
 
