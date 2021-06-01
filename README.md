@@ -12,7 +12,7 @@ CG test set | 10,800
 
 To evaluate your model's ability of compositonal generalization, train your model on training and validation sets and evaluate on both the **random test set** and the **CG test set**. Either human evaluation or the provided automatic evaluation tool can be employed to evalaute the correctness of compound translations.
 
-This work is accepted to appear at the ACL 2021 main conference. You may find the paper here: <>.
+This work is accepted to appear at the ACL 2021 main conference. You may find the paper here: [https://arxiv.org/abs/2105.14802](https://arxiv.org/abs/2105.14802).
 
 ## Data
 All splits of CoGnitnion dataset are included in '/data', which contains the randomly split training, validation and test sets, along with the CG test set ('/data/cg-test') for evaluating compositonal genernalization.
