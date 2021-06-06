@@ -63,10 +63,10 @@ We use the same model in the paper to perform inference on the test data in '/da
 Test Set | Instance-level Error Rate | Aggregate-level Error Rate | BLEU
 ------------ | ------------- | ------------- | ------------- 
 Random-test | - | - | 69.58
-CG-test | 25.09% | 58.15% | 49.30
+CG-test | 24.99% | 58.06% | 49.30
 CG-test-NP | 19.31% | 49.03% | 51.51
 CG-test-VP | 22.48% | 54.17% | 48.13
-CG-test-PP | 33.56% | 72.25% | 48.26
+CG-test-PP | 33.25% | 70.97% | 48.26
 
 This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**.
 
