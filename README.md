@@ -60,13 +60,13 @@ where 'path_to_results' refers to the path of model results and 'path-to-lexicon
 '/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
 
 We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation:
-Test Set | Instance-level Error Rate | Aggregate-level Error Rate | BLEU
------------- | ------------- | ------------- | ------------- 
-Random-test | - | - | 69.58
-CG-test | 24.99% | 58.06% | 49.30
-CG-test-NP | 19.31% | 49.03% | 51.51
-CG-test-VP | 22.48% | 54.17% | 48.13
-CG-test-PP | 33.25% | 70.97% | 48.26
+Test Set | Instance-level Error Rate | Aggregate-level Error Rate 
+------------ | ------------- | ------------- 
+Random-test | - | - 
+CG-test | 24.99% | 58.06% 
+CG-test-NP | 19.31% | 49.03% 
+CG-test-VP | 22.48% | 54.17% 
+CG-test-PP | 33.25% | 70.97% 
 
 This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**.
 
