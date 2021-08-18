@@ -68,7 +68,7 @@ CG-test-NP | 19.31% | 49.03% | -
 CG-test-VP | 22.48% | 54.17% | -
 CG-test-PP | 33.25% | 70.97% | -
 
-This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**. Note that the BLEU score on the CG-test set is different from the results in our paper due to mistakes in handling Chinese puncutations.
+This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**. Note that the **BLEU score on the CG-test set is different from the results in our paper** due to mistakes in handling Chinese puncutations.
 
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
