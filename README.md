@@ -62,6 +62,7 @@ where 'path_to_results' refers to the path of model results and 'path-to-lexicon
 We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation:
 Test Set | Instance-level Error Rate | Aggregate-level Error Rate | BLEU 
 ------------ | ------------- | ------------- | ------------- 
+Training | - | - | 99.74
 Random-test | - | - | 69.58
 CG-test | 24.99% | 58.06% | 60.6
 CG-test-NP | 19.31% | 49.03% | -
