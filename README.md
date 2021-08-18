@@ -62,13 +62,13 @@ where 'path_to_results' refers to the path of model results and 'path-to-lexicon
 We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation:
 Test Set | Instance-level Error Rate | Aggregate-level Error Rate 
 ------------ | ------------- | ------------- 
-Random-test | - | - 
-CG-test | 24.99% | 58.06% 
-CG-test-NP | 19.31% | 49.03% 
-CG-test-VP | 22.48% | 54.17% 
-CG-test-PP | 33.25% | 70.97% 
+Random-test | - | - | 69.58
+CG-test | 24.99% | 58.06% | 60.6
+CG-test-NP | 19.31% | 49.03% | -
+CG-test-VP | 22.48% | 54.17% | -
+CG-test-PP | 33.25% | 70.97% | -
 
-This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**.
+This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**. Note that the BLEU score on the CG-test set is different from the results in our paper due to mistakes in handling Chinese puncutations.
 
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
