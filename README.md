@@ -60,8 +60,8 @@ where 'path_to_results' refers to the path of model results and 'path-to-lexicon
 '/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
 
 We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation:
-Test Set | Instance-level Error Rate | Aggregate-level Error Rate 
------------- | ------------- | ------------- 
+Test Set | Instance-level Error Rate | Aggregate-level Error Rate | BLEU 
+------------ | ------------- | ------------- | ------------- 
 Random-test | - | - | 69.58
 CG-test | 24.99% | 58.06% | 60.6
 CG-test-NP | 19.31% | 49.03% | -
