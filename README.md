@@ -15,7 +15,7 @@ To evaluate your model's ability of compositonal generalization, train your mode
 This work is accepted to appear at the ACL 2021 main conference. You may find the paper here: [https://arxiv.org/abs/2105.14802](https://arxiv.org/abs/2105.14802).
 
 ## Data
-All splits of CoGnitnion dataset are included in '/data', which contains the randomly split training, validation and test sets, along with the CG test set ('/data/cg-test') for evaluating compositonal genernalization.
+All splits of CoGnitnion dataset are included in '/data', which contains the randomly split training, validation and test sets, along with the CG test set ('/data/cg-test') for evaluating compositonal genernalization. To facilitate reproduction of the baseline, we also provide processed data (both BPE processed data and farsieq-binarized data) that is used in our paper experiments.
 
 Samples from the training, validation and random test sets:
 
@@ -59,17 +59,20 @@ where 'path_to_results' refers to the path of model results and 'path-to-lexicon
 ## Baseline
 '/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
 
-We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation:
-Test Set | Instance-level Error Rate | Aggregate-level Error Rate | BLEU 
+We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation. The BLEU scores and the compound translation error rates (CTER) are listed as follows:
+Test Set | Instance-level CTER | Aggregate-level CTER | BLEU 
 ------------ | ------------- | ------------- | ------------- 
-Training | - | - | 99.74
-Random-test | - | - | 69.58
-CG-test | 24.99% | 58.06% | 60.6
-CG-test-NP | 19.31% | 49.03% | -
-CG-test-VP | 22.48% | 54.17% | -
-CG-test-PP | 33.25% | 70.97% | -
+Training | - | - | 99.64
+Random-test | - | - | 69.48
+CG-test | 28.42% | 62.88% | 59.5
+CG-test-NP | 24.74% | 55.16% | -
+CG-test-VP | 24.82% | 59.54% | -
+CG-test-PP | 35.71% | 73.94% | -
 
-This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**. Note that the **BLEU score on the CG-test set is different from the results in our paper** due to mistakes in handling Chinese puncutations.
+This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**. 
+Note that:
+    (A) The **BLEU score on the CG-test set is different from the results in our paper** due to mistakes in handling Chinese puncutations.
+    (B) As noted by other researchers, we find that the results on the CG-test set are of high variance. Therefore, we conduct 5 additional eperiments with different seeds during training and report average performance of these models. The Fariseq seeds used in our experiment are: 1(default), 7, 77, 777, 7777, 7777, and we also put the specific results of each seed in '/data/baseline_results'.
 
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
