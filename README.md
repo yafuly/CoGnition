@@ -60,6 +60,7 @@ where 'path_to_results' refers to the path of model results and 'path-to-lexicon
 '/eval/paper_results' lists the model results along with human evaluation in the paper, based on which we conduct quantitative anylysis. As we asked expert translators to further examine the data of the CG-test set, there are minor differences between the data in '/data/cg-test' and the one used in the paper: a) some illegal sentences are replaced with legal ones (less than 1%); b) some reference translations are further revised.
 
 We use the same model in the paper to perform inference on the test data in '/data/cg-test' and use the **automatic evaluation tool** for evaluation. The BLEU scores and the compound translation error rates (CTER) are listed as follows:
+
 Test Set | Instance-level CTER | Aggregate-level CTER | BLEU 
 ------------ | ------------- | ------------- | ------------- 
 Training | - | - | 99.64
