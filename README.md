@@ -73,7 +73,7 @@ CG-test-PP | 35.71% | 73.94% | -
 This can serve as an NMT **baseline** for the CoGnition dataset **under automatic evaluation**. 
 Note that:
     (A) The **BLEU score on the CG-test set is different from the results in our paper** due to mistakes in handling Chinese puncutations.
-    (B) As noted by other researchers, we find that the results on the CG-test set are of high variance. Therefore, we conduct 5 additional eperiments with different seeds during training and report average performance of these models. The Fariseq seeds used in our experiment are: 1(default), 7, 77, 777, 7777, 7777, and we also put the specific results of each seed in '/data/baseline_results'.
+    (B) As noted by other researchers, we find that the results on the CG-test set are of high variance. Therefore, we conduct 5 additional eperiments with different seeds during training and report average performance of these models. The Fariseq seeds used in our experiment are: 1(default), 7, 77, 777, 7777, 77777, and we also put the specific results of each seed in '/data/baseline_results'.
 
 ## Acknowledgment
 We thank colleagues from [Lan-bridge](http://www.lan-bridge.com/) for examining data and evaluating results. 
